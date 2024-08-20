@@ -1,0 +1,6 @@
+id=THP
+name=系统透明大页（Transparent HugePages，简称THP）配置
+version=v1
+versionCode=1
+author=idyll™2018
+description=[运行中😊]📲设备:内核自动地将小的内存页面合并成大页面，以减少页表的大小，从而提高内存访问效率，使用透明大页可以提高共享内存的性能！
