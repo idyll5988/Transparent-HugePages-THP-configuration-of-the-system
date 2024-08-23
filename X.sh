@@ -13,8 +13,8 @@ function lock_value() {
 	    km2 "命令:($1) 位置不存在跳过..."
         return 1
     fi
+	chown root:root "$1" 2> /dev/null 	
 	chmod 0666 "$1" 2> /dev/null 
-	chown root:root "$1"
 	local curval=$(cat "$1" 2> /dev/null)
 	if [[ "$curval" == "$2" ]]; then
 	    km1 "命令:$1 参数已存在 ($2) 跳过..."
